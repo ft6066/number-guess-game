@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("images/squidgame.jpg");
+  background-size: cover;
+  font-family: "SBAggroB";
+}
+
+#main-area {
+  border: 10px solid rgb(195, 57, 57);
+  width: 60%;
+  height: 35em;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 20%;
+  border-radius: 60px;
+  background-color: rgba(999, 999, 999, 0.6);
+}
+
+h1 {
+  margin: 40px 0;
+  padding: 30px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 0px black, /* 오른쪽 아래 */ -2px -2px 0px black,
+    /* 왼쪽 위 */ 2px -2px 0px black, /* 오른쪽 위 */ -2px 2px 0px black; /* 왼쪽 아래 */
+}
+
+#result-area {
+  margin: 40px 0;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+#chance-area {
+  margin: 40px 0;
+  font-size: 30px;
+}
+
+#input-number::-webkit-outer-spin-button,
+#input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#input-number {
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  height: 50px;
+  font-weight: bold;
+}
+
+#go-button {
+  background-color: orange;
+  width: 50px;
+}
+
+#reset-button {
+  background-color: #d9d9d9;
+  width: 70px;
+}
