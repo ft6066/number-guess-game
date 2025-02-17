@@ -9,6 +9,7 @@
 body {
   background-image: url("images/squidgame.jpg");
   background-size: cover;
+  height: 100vh;
   font-family: "SBAggroB";
 }
 
