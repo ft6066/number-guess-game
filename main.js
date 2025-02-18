@@ -74,5 +74,6 @@ function reset() {
   resultArea.textContent = "범위는 1부터 100까지입니다";
   chanceArea.textContent = `기회 : ${chances}번`;
   randomNumber(); //랜덤 숫자 재생성
-  goButton.disabled = false; //go버튼 활성화
+  goButton.disabled = false;
+  gameOver = false; //go버튼 활성화
 }
