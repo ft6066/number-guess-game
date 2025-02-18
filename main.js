@@ -10,7 +10,7 @@
 //중복된 숫자를 입력하면 알려주기 기회 깎이지 않음
 
 let randomNum = 0;
-let chances = 5;
+let chances = 3;
 let inputList = []; //입력한 숫자를 저장하는 배열
 let gameOver = false; //go버튼 비활성화 여부
 let inputNum = document.getElementById("input-number");
@@ -48,16 +48,16 @@ function go() {
     resultArea.textContent = "정답입니다!!";
   }
 
-  chances--; //기회 차감
-  chanceArea.textContent = `기회 : ${chances}번`;
-
   if (inputList.includes(userNum) == true) {
     resultArea.textContent = "중복된 숫자입니다. 다시 입력해 주세요";
     return;
-  } else {
-    inputList.push(userNum); //배열에 입력값을 추가
-    console.log(inputList);
   }
+
+  chances--; //기회 차감
+  chanceArea.textContent = `기회 : ${chances}번`;
+
+  inputList.push(userNum); //배열에 입력값을 추가
+  console.log(inputList);
 
   if (chances < 1) {
     gameOver = true;
@@ -68,7 +68,7 @@ function go() {
 }
 
 function reset() {
-  chances = 5; //기회 초기화
+  chances = 3; //기회 초기화
   inputList = []; //입력값 배열 초기화
   inputNum.value = ""; //input창 공백
   resultArea.textContent = "범위는 1부터 100까지입니다";
