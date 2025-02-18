@@ -46,6 +46,7 @@ function go() {
     resultArea.textContent = "Down!";
   } else {
     resultArea.textContent = "정답입니다!!";
+    gameOver = true;
   }
 
   if (inputList.includes(userNum) == true) {
