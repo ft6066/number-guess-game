@@ -63,7 +63,7 @@ function go() {
     gameOver = true;
   }
   if (gameOver == true) {
-    goButton.disabled = gameOver; //go버튼 비활성화
+    goButton.disabled = true; //go버튼 비활성화
   }
 }
 
@@ -74,5 +74,5 @@ function reset() {
   resultArea.textContent = "범위는 1부터 100까지입니다";
   chanceArea.textContent = `기회 : ${chances}번`;
   randomNumber(); //랜덤 숫자 재생성
-  gameOver = false; //go버튼 활성화
+  goButton.disabled = false; //go버튼 활성화
 }
